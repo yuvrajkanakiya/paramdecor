@@ -1,0 +1,301 @@
+/*********************************************************************************
+
+	Template Name: Boighor Bookshop Responsive Bootstrap4 Template  
+	Description: Template description
+	Version: 1.0
+	Note: This is custom css. All custom styles (user styles) declare here.
+
+**********************************************************************************/
+
+.mainmenu__nav {
+    margin-left: 50px;
+}
+
+.header__area {
+    background-color: white;
+}
+
+.meninmenu li.drop .megamenu.mega04 {
+    width: 200px;
+}
+
+
+.product-grid3 {
+    font-family: Roboto,sans-serif;
+    text-align: center;
+    position: relative;
+    z-index: 1
+}
+
+    .product-grid3:before {
+        content: "";
+        height: 81%;
+        width: 100%;
+        background: #fff;
+        border: 1px solid rgba(0,0,0,.1);
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: all .5s ease 0s
+    }
+
+    .product-grid3:hover:before {
+        opacity: 1;
+        height: 100%
+    }
+
+    .product-grid3 .product-image3 {
+        position: relative
+    }
+
+        .product-grid3 .product-image3 a {
+            display: block
+        }
+
+        .product-grid3 .product-image3 img {
+            width: 100%;
+            height: 290px;
+        }
+
+    .product-grid3 .pic-1 {
+        opacity: 1;
+        transition: all .5s ease-out 0s
+    }
+
+    .product-grid3:hover .pic-1 {
+        opacity: 0
+    }
+
+    .product-grid3 .pic-2 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        transition: all .5s ease-out 0s
+    }
+
+    .product-grid3:hover .pic-2 {
+        opacity: 1
+    }
+
+    .product-grid3 .social {
+        width: 120px;
+        padding: 0;
+        margin: 0 auto;
+        list-style: none;
+        opacity: 0;
+        position: absolute;
+        right: 0;
+        left: 0;
+        bottom: -23px;
+        transform: scale(0);
+        transition: all .3s ease 0s
+    }
+
+    .product-grid3:hover .social {
+        opacity: 1;
+        transform: scale(1)
+    }
+
+    .product-grid3:hover .product-discount-label, .product-grid3:hover .product-new-label, .product-grid3:hover .title {
+        opacity: 0
+    }
+
+    .product-grid3 .social li {
+        display: inline-block
+    }
+
+        .product-grid3 .social li a {
+            color: #e67e22;
+            background: #fff;
+            font-size: 18px;
+            line-height: 50px;
+            width: 50px;
+            height: 50px;
+            border: 1px solid rgba(0,0,0,.1);
+            border-radius: 50%;
+            margin: 0 2px;
+            display: block;
+            transition: all .3s ease 0s
+        }
+
+            .product-grid3 .social li a:hover {
+                background: #e67e22;
+                color: #fff
+            }
+
+    .product-grid3 .product-discount-label, .product-grid3 .product-new-label {
+        background-color: #e67e22;
+        color: #fff;
+        font-size: 17px;
+        padding: 2px 10px;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        transition: all .3s
+    }
+
+
+@media only screen and (max-width:1200px) {
+    .product-grid3 .rating {
+        margin: 0
+    }
+}
+
+@media only screen and (max-width:990px) {
+    .product-grid3 {
+        margin-bottom: 30px
+    }
+
+        .product-grid3 .rating {
+            margin: -22px 0 0
+        }
+}
+
+@media only screen and (max-width:359px) {
+    .product-grid3 .rating {
+        margin: 0
+    }
+}
+
+.product-grid3 .product-content {
+    padding: 20px 10px;
+    text-align: center
+}
+
+.product-grid3 .title {
+    font-size: 15px;
+    margin: 0 0 7px
+}
+
+    .product-grid3 .title a {
+        color: #303030
+    }
+
+        .product-grid3 .title a:hover {
+            color: #3498db
+        }
+
+.product-grid3 .price {
+    color: #303030;
+    font-size: 15px
+}
+
+@media screen and (max-width:990px) {
+    .product-grid3 {
+        margin-bottom: 30px
+    }
+}
+
+.button-cart {
+    margin-top: 66px;
+    text-align: left;
+}
+
+.button-wishlist {
+    margin-top: 66px;
+    text-align: right;
+}
+
+.Next_Button {
+    border-radius: 4px;
+    background-color: #1877f2;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 16px;
+    padding: 6px;
+    width: 20px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+    .Next_Button span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+        color: #FFFFFF;
+    }
+
+        .Next_Button span:after {
+            content: '\00bb';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.5s;
+        }
+
+    .Next_Button:hover span {
+        padding-right: 25px;
+    }
+
+        .Next_Button:hover span:after {
+            opacity: 1;
+            right: 0;
+        }
+
+.Previous_Button {
+    border-radius: 4px;
+    background-color: #1877f2;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 16px;
+    padding: 6px;
+    width: 20px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+    .Previous_Button span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+        color: #FFFFFF;
+    }
+
+        .Previous_Button span:after {
+            content: '\00AB';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            left: -20px;
+            transition: 0.5s;
+        }
+
+    .Previous_Button:hover span {
+        padding-left: 25px;
+    }
+
+        .Previous_Button:hover span:after {
+            opacity: 1;
+            left: 0;
+        }
+
+.card {
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.1), 0 1px 2px 0 rgba(0,0,0,.06);
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 0 solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+}
+
+.card-body {
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1rem;
+}
+
